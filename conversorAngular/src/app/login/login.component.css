@@ -1,0 +1,11 @@
+.titulo-login {
+  text-align: center;
+}
+.container-sm{
+  width: 30% !important;
+}
+
+.botao-submit{
+  margin-top: 5%;
+  margin-left: 40%;
+}
