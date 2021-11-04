@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "conversorAngular": {
+    "conversor-alunos": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/conversorAngular",
+            "outputPath": "dist/conversor-alunos",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -30,7 +30,6 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -72,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "conversorAngular:build:production"
+              "browserTarget": "conversor-alunos:build:production"
             },
             "development": {
-              "browserTarget": "conversorAngular:build:development"
+              "browserTarget": "conversor-alunos:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "conversorAngular:build"
+            "browserTarget": "conversor-alunos:build"
           }
         },
         "test": {
@@ -98,7 +97,6 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -107,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "conversorAngular"
+  "defaultProject": "conversor-alunos"
 }
